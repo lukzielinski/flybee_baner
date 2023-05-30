@@ -3,6 +3,9 @@ const logo = document.querySelector('.flybee-logo');
 const squaresContainer = document.querySelector('.squares-container');
 const destinationContainer = document.querySelector('.destination-container');
 const country = document.querySelector('.country');
+const city = document.querySelector('.city');
+const bookingContainer = document.querySelector('.booking-container');
+const priceContainer = document.querySelector('.price-container');
 
 logoContainer.classList.add('animate__animated', 'animate__fadeInUpBig');
 logo.classList.add('animate__animated', 'animate__fadeInLeftBig');
@@ -21,6 +24,11 @@ setTimeout(() => {
 }, 2000);
 
 setTimeout(() => {
-    country.classList.add('country-active');
+    country.classList.add('animate__animated', 'animate__fadeInUpBig');
+    city.classList.add('animate__animated', 'animate__fadeInUpBig');
+    bookingContainer.classList.add('animate__animated', 'animate__fadeInUpBig');
+    priceContainer.classList.add('animate__animated', 'animate__fadeInUpBig');
+    priceContainer.style.display = 'grid';
     destinationContainer.style.display = 'grid';
+    bookingContainer.style.display = 'flex';
 }, 3000);
