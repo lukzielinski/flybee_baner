@@ -1,0 +1,28 @@
+{
+    "offers": [
+        {
+            "city": "Warsaw",
+            "country": "Poland",
+            "price": "399",
+            "currency": "USD",
+            "priceText": "from",
+            "imgURL": "https://rekrutacja.webdeveloper.rtbhouse.net/files/warsaw.jpg"
+        },
+        {
+            "city": "Madrid",
+            "country": "Spain",
+            "price": "295",
+            "currency": "USD",
+            "priceText": "from",
+            "imgURL": "https://rekrutacja.webdeveloper.rtbhouse.net/files/madrid.jpg"
+        },
+        {
+            "city": "Berlin",
+            "country": "Germany",
+            "price": "350",
+            "currency": "USD",
+            "priceText": "from",
+            "imgURL": "https://rekrutacja.webdeveloper.rtbhouse.net/files/berlin.jpg"
+        }
+    ]
+}

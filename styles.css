@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v26/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4i1UA.ttf) format('truetype');
+}
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d5d4d4;
+}
+.baner-container {
+  width: 300px;
+  height: 600px;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+.baner-container {
+  background-image: url('assets/png/warsaw.png');
+}
+.flybee-logo-container {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background-color: #fcda16;
+}
+.flybee-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  width: 150px;
+  height: 50px;
+  background-color: #fcda16;
+}
+.move-position {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  transition: all 0.5s ease-in-out 0.2s;
+}
+.squares-container {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 50px;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #fbfbfb;
+}
+.active-square {
+  background-color: #fcda16;
+}
+.country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-weight: 600;
+  background-color: white;
+}
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  background-color: #fcda16;
+}
+.destination-container {
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  top: 50%;
+  color: #000000;
+  left: 50px;
+  width: 150px;
+  height: 70px;
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
