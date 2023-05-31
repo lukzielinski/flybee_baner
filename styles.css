@@ -32,12 +32,27 @@ body {
 .baner-container {
   width: 300px;
   height: 600px;
-  background-color: #ffffff;
+  background-color: #ffffff19;
+  display: none;
   overflow: hidden;
   position: relative;
 }
-.baner-container {
-  background-image: url('assets/png/warsaw.png');
+.active-baner {
+  display: block;
+}
+.lt {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  background-color: #ffffff19;
+}
+.wrapper {
+  width: 300px;
+  height: 600px;
+}
+.active {
+  display: block;
 }
 .flybee-logo-container {
   position: relative;
@@ -88,12 +103,18 @@ body {
   font-weight: 600;
   background-color: white;
 }
+.country-active {
+  width: 40%;
+  transition: all 1.5s ease-in-out 0.2s;
+}
 .city {
   display: flex;
   align-items: center;
   padding-left: 10px;
   font-size: 45px;
   font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   background-color: #fcda16;
 }
 .destination-container {
@@ -145,7 +166,7 @@ body {
   background-color: white;
   grid-template-rows: 30% 60%;
 }
-.booking-container .text {
+.booking-container .text-booking {
   margin-left: 30px;
   font-size: 15px;
   font-weight: 900;
@@ -157,12 +178,22 @@ body {
   margin-top: 0px;
   font-size: 10px;
 }
-.booking-container .chevron-line {
+.chevron-line {
   color: #fcda16;
   position: absolute;
-  bottom: 18%;
+  bottom: 81px;
+  left: 90px;
   width: 75px;
   height: 18px;
+  display: none;
   margin-left: -60px;
   border-top: 4px solid #fcda16;
+}
+@keyframes scaleBackground {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
 }
