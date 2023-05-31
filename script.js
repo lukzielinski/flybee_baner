@@ -52,7 +52,5 @@ function showNextSlide() {
 
   currentSlide = (currentSlide + 1) % slides.length;
 
-  console.log(currentSlide);
-
   slides[currentSlide].classList.add("active-square");
 }

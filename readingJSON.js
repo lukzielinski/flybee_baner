@@ -22,14 +22,13 @@ function fetchOffersAndDisplay() {
 function displayOffer(offer, banerContainer) {
   const { city, country, price, currency, priceText, imgURL } = offer;
 
-  const wrapper = document.querySelector(".wrapper");
-  wrapper.style.backgroundImage = `url(${imgURL})`;
-  wrapper.style.backgroundSize = "cover";
-  wrapper.style.animation = "scaleBackground 6s infinite";
-  wrapper.style.animationFillMode = "forwards";
+  const background = document.querySelector(".background-image");
+  background.style.backgroundImage = `url(${imgURL})`;
+  background.style.backgroundSize = "cover";
+  background.style.animation = "scaleBackground 6s infinite";
+  background.style.animationFillMode = "forwards";
   const countryElement = banerContainer.querySelector(".country");
   const cityElement = banerContainer.querySelector(".city");
-  console.log(cityElement.style.width)
   const textElement = banerContainer.querySelector(".text");
   const priceElement = banerContainer.querySelector(".price");
 

@@ -40,14 +40,14 @@ body {
 .active-baner {
   display: block;
 }
-.lt {
+.background {
   position: absolute;
   width: 300px;
   height: 600px;
   overflow: hidden;
   background-color: #ffffff19;
 }
-.wrapper {
+.background-image {
   width: 300px;
   height: 600px;
 }
@@ -182,11 +182,10 @@ body {
   color: #fcda16;
   position: absolute;
   bottom: 81px;
-  left: 90px;
+  left: 30px;
   width: 75px;
   height: 18px;
   display: none;
-  margin-left: -60px;
   border-top: 4px solid #fcda16;
 }
 @keyframes scaleBackground {

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
+@elementsColor: #fcda16;
+
 .display-flex {
     display: flex;
     justify-content: center;
@@ -31,14 +33,14 @@
     display: block;
   }
 
- .lt{
+ .background{
     position: absolute;
     width: 300px;
     height: 600px;
     overflow: hidden;
     background-color: #ffffff19;
  }
- .wrapper{
+ .background-image{
     width: 300px;
     height: 600px;
  }
@@ -49,7 +51,7 @@
     position: relative;
     width: 300px;
     height: 600px;
-    background-color: #fcda16;
+    background-color: @elementsColor;
   }
 
   .flybee-logo{
@@ -59,7 +61,7 @@
     left: 30px;
     width: 150px;
     height: 55px;
-    background-color: #fcda16;
+    background-color: @elementsColor;
   }
   .move-position{
     position: absolute;
@@ -83,7 +85,7 @@
     background-color: #fbfbfb;
   }
   .active-square{
-    background-color: #fcda16;
+    background-color: @elementsColor;
   }
 
   .country{
@@ -104,7 +106,7 @@
     font-weight: 500;
     white-space: nowrap;
     text-overflow: ellipsis;
-    background-color: #fcda16;
+    background-color: @elementsColor;
 }
 .destination-container{
     font-family: 'Rubik', sans-serif;
@@ -127,7 +129,7 @@
     width: 100px;
     height: 50px;
     display: none;
-    color: #fcda16;
+    color: @elementsColor;
     grid-template-rows: 30% 60%;
 }
 .price-container .text{
@@ -163,21 +165,20 @@
     text-transform: uppercase;
 }
 .booking-container .chevron{
-    color: #fcda16;
+    color: @elementsColor;
     margin-left: 6px;
     margin-top: 0px;
     font-size: 10px;
 }
 .chevron-line{
-    color: #fcda16;
+    color: @elementsColor;
     position: absolute;
     bottom: 81px;
-    left: 90px;
+    left: 30px;
     width: 75px;
     height: 18px;
     display: none;
-    margin-left: -60px;
-    border-top: 4px solid #fcda16;
+    border-top: 4px solid @elementsColor;
 }
 
 @keyframes scaleBackground {
